@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <iframe src="https://scratch.mit.edu/projects/914461139/embed" margin="0;auto" allowtransparency="true" width="970" height="804" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <div style=“position: relative; padding-top: 75%;”>
-    <figure>
-        <iframe style=“position: absolute; top: 0; left: 0; Height:100%; Width:100%; ”src="https://scratch.mit.edu/projects/914461139/embed/"
-           frameborder=”0“ allowfullscreen=”“ scrolling=”no">
-        </iframe>
-    </figure>
-</div>
-  </body>
+
+<head>
+    <title>full screen iframe</title>
+    <style type="text/css">
+        html {
+            overflow: auto;
+        }
+        
+        html,
+        body,
+        div,
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            border: none;
+        }
+        
+        iframe {
+            display: block;
+            width: 100%;
+            border: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://scratch.mit.edu/projects/914461139/embed"
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="auto">
+  </iframe>
+
+</body>
+
 </html>
